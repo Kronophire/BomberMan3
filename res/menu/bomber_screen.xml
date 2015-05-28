@@ -1,0 +1,70 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".BomberScreen" >
+
+
+    <Button
+        android:id="@+id/moveLeft"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="22dp"
+        android:text="Left" />
+    <Button
+        android:id="@+id/moveDown"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/moveLeft"
+        android:layout_toRightOf="@+id/moveLeft"
+        android:text="Down" />
+    <Button
+        android:id="@+id/moveRight"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/moveDown"
+        android:layout_alignBottom="@+id/moveDown"
+        android:layout_toRightOf="@+id/moveDown"
+        android:text="Right" />
+    <Button
+        android:id="@+id/dropBomb"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/moveRight"
+        android:layout_alignBottom="@+id/moveRight"
+        android:layout_alignParentRight="true"
+        android:text="Bomb" />
+    <Button
+        android:id="@+id/moveUp"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/moveLeft"
+        android:layout_alignRight="@+id/moveDown"
+        android:layout_toRightOf="@+id/moveLeft"
+        android:text="Up" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/moveRight"
+        android:layout_alignBottom="@+id/moveRight"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/moveRight"
+        android:text="score" />
+
+    <sofia.graphics.ShapeView
+        android:id="@+id/shapeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/moveUp"
+        android:layout_alignParentLeft="true" >
+    </sofia.graphics.ShapeView>
+
+</menu>
